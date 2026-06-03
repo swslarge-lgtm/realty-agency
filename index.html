@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Team — Агентство Нерухомості</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .logo-gradient { background: linear-gradient(135deg, #00A9B7 0%, #1A4B5A 100%); }
+        .accent-pink { background-color: #D81B60; }
+        .text-teal { color: #00A9B7; }
+        .bg-teal { background-color: #00A9B7; }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Навігація -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal rounded flex items-center justify-center text-white font-bold text-xl">P</div>
+                <span class="font-extrabold text-xl tracking-tighter text-[#1A4B5A]">PERFECT <span class="text-teal">TEAM</span></span>
+            </div>
+            <div class="hidden md:flex gap-6 font-semibold text-sm uppercase">
+                <a href="#services" class="hover:text-teal transition">Послуги</a>
+                <a href="#advantages" class="hover:text-teal transition">Переваги</a>
+                <a href="#contacts" class="hover:text-teal transition">Контакти</a>
+            </div>
+            <a href="tel:+380000000000" class="hidden sm:block border-2 border-teal text-teal px-4 py-2 rounded-full font-bold hover:bg-teal hover:text-white transition">
+                +38 (0XX) XXX-XX-XX
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Блок -->
+    <section class="relative bg-[#1A4B5A] text-white py-20 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center"></div>
+        <div class="container mx-auto relative z-10 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                ЗНАЙДЕМО ВАШ <br><span class="text-teal text-5xl md:text-7xl">ІДЕАЛЬНИЙ ПРОСТІР</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl text-gray-300">
+                Агентство нерухомості Perfect Team — це професійний супровід, прозорі угоди та найкращі об'єкти на ринку.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+                <a href="#consultation" class="bg-teal hover:bg-cyan-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg transform hover:-translate-y-1 text-center">
+                    Отримати консультацію
+                </a>
+                <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-lg transition text-center">
+                    Переглянути послуги
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок Послуг -->
+    <section id="services" class="py-20 container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1A4B5A] mb-4 uppercase">Наші послуги</h2>
+            <div class="h-1 w-20 bg-teal mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Послуга 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-teal">
+                <div class="mb-4 text-teal text-4xl">🏠</div>
+                <h3 class="text-xl font-bold mb-3">Купівля та продаж</h3>
+                <p class="text-gray-600">Повний супровід угоди від підбору об'єкта до підписання договору купівлі-продажу.</p>
+            </div>
+            <!-- Послуга 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-teal">
+                <div class="mb-4 text-teal text-4xl">🔑</div>
+                <h3 class="text-xl font-bold mb-3">Оренда нерухомості</h3>
+                <p class="text-gray-600">Швидкий пошук орендарів або підбір житла для довгострокової та подобової оренди.</p>
+            </div>
+            <!-- Послуга 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-teal">
+                <div class="mb-4 text-teal text-4xl">⚖️</div>
+                <h3 class="text-xl font-bold mb-3">Юридичний супровід</h3>
+                <p class="text-gray-600">Перевірка документів, підготовка договорів та гарантування безпеки ваших фінансів.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок Переваг -->
+    <section id="advantages" class="bg-gray-100 py-20 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1973" alt="Команда" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#1A4B5A] mb-8 uppercase">Чому обирають <span class="text-teal">Perfect Team</span>?</h2>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">✓</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Експертність</h4>
+                                <p class="text-gray-600">Ми знаємо ринок нерухомості зсередини та бачимо підводні камені.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">✓</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Швидкість</h4>
+                                <p class="text-gray-600">Закриваємо запити клієнтів у найкоротші терміни завдяки власній базі.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">✓</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Прозорість</h4>
+                                <p class="text-gray-600">Жодних прихованих комісій. Ви отримуєте повну звітність на кожному етапі.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Блок / Форма -->
+    <section id="consultation" class="py-20 px-4 bg-teal text-white">
+        <div class="container mx-auto max-w-4xl bg-[#1A4B5A] p-8 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-teal opacity-20 rounded-bl-full"></div>
+            <div class="relative z-10 text-center md:text-left md:flex items-center gap-10">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">Готові до вигідної угоди?</h2>
+                    <p class="text-gray-300">Залиште заявку, і наш спеціаліст зателефонує вам протягом 15 хвилин для безкоштовної консультації.</p>
+                </div>
+                <form class="md:w-1/2 space-y-4">
+                    <input type="text" placeholder="Ваше ім'я" class="w-full px-5 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-teal">
+                    <input type="tel" placeholder="+38 (0__) ___ __ __" class="w-full px-5 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-teal">
+                    <button class="w-full bg-[#D81B60] hover:bg-pink-700 text-white font-bold py-3 rounded-lg transition transform hover:scale-105 shadow-lg uppercase tracking-wider">
+                        Хочу консультацію
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти та Футер -->
+    <footer id="contacts" class="bg-gray-900 text-gray-400 py-12 px-4">
+        <div class="container mx-auto grid md:grid-cols-4 gap-10">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="font-extrabold text-2xl tracking-tighter text-white">PERFECT <span class="text-teal">TEAM</span></span>
+                </div>
+                <p class="mb-6 max-w-sm">Ваш надійний партнер на ринку нерухомості. Ми створюємо можливості для вашого комфортного життя та успішних інвестицій.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase">Контакти</h4>
+                <ul class="space-y-3">
+                    <li>м. Київ, вул. Центральна, 12</li>
+                    <li><a href="tel:+380000000000" class="hover:text-white transition">+38 (0XX) XXX-XX-XX</a></li>
+                    <li><a href="mailto:info@perfect-team.ua" class="hover:text-white transition">info@perfect-team.ua</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase">Графік роботи</h4>
+                <ul class="space-y-3">
+                    <li>Пн–Пт: 09:00 – 19:00</li>
+                    <li>Сб: 10:00 – 16:00</li>
+                    <li>Нд: Вихідний</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            &copy; 2024 Агентство нерухомості Perfect Team. Всі права захищені.
+        </div>
+    </footer>
+
+</body>
+</html>
